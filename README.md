@@ -149,7 +149,7 @@ device_systems/
 
 ## Ejemplos de peticiones
 
-### GET /users — Listar todos los usuarios
+### GET /users — Listar todos los usuarios: ![alt text](image-1.png)
 
 ```http
 GET http://127.0.0.1:8000/users
@@ -184,7 +184,7 @@ Respuesta `200 OK`:
 
 ---
 
-### GET /users?role=admin — Filtrar por rol
+### GET /users?role=admin — Filtrar por rol: ![alt text](image.png) - ![alt text](image-2.png)
 
 ```http
 GET http://127.0.0.1:8000/users?role=admin
@@ -205,7 +205,7 @@ Respuesta `200 OK`:
 
 ---
 
-### GET /users?is_active=false — Filtrar por estado inactivo
+### GET /users?is_active=false — Filtrar por estado inactivo: ![alt text](image-3.png)
 
 ```http
 GET http://127.0.0.1:8000/users?is_active=false
@@ -226,7 +226,7 @@ Respuesta `200 OK`:
 
 ---
 
-### GET /users?role=user&is_active=true — Filtros combinados
+### GET /users?role=user&is_active=true — Filtros combinados:![alt text](image-4.png)
 
 ```http
 GET http://127.0.0.1:8000/users?role=user&is_active=true
@@ -236,7 +236,7 @@ Respuesta `200 OK`: lista de usuarios activos con rol `user`.
 
 ---
 
-### GET /users/{user_id} — Consultar por ID
+### GET /users/{user_id} — Consultar por ID: ![alt text](image-5.png)
 
 ```http
 GET http://127.0.0.1:8000/users/1
@@ -262,7 +262,7 @@ Respuesta `404 Not Found` (ID inexistente):
 
 ---
 
-### POST /users — Crear un nuevo usuario
+### POST /users — Crear un nuevo usuario: ![alt text](image-6.png)
 
 ```http
 POST http://127.0.0.1:8000/users
@@ -360,9 +360,6 @@ content-type: application/json
 4. Pulsa **Try it out** → completa los campos → **Execute**.
 5. La respuesta aparece debajo con el código HTTP, el body y las cabeceras.
 
-> **Nota sobre capturas:** Al ejecutar el proyecto localmente verás la interfaz de Swagger UI con todos los endpoints documentados automáticamente. FastAPI genera esta documentación a partir del código sin configuración adicional.
-
----
 
 ## Pruebas con Postman o Thunder Client
 
